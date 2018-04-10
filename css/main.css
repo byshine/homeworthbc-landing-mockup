@@ -195,6 +195,7 @@ textarea {
  .main-container-flexitems {
      background-color: rgba(37, 37, 37, 0.5);
      padding: 2rem;
+     text-align: center;
 
  }
 
@@ -255,6 +256,21 @@ textarea {
 
  section {
      padding: 5rem;
+ }
+ 
+ .main-titlesub-disclaimer {
+    display: inline-block;
+    background-color:rgb(252, 59, 59);
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 1.5em;
+ }
+
+ .main-titlesub-disclaimer a {
+     text-decoration: underline;
+     color : white;
  }
 
 
