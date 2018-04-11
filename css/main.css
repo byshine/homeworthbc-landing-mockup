@@ -184,6 +184,8 @@ textarea {
     font-size: 4.5rem;
     color: white;
     text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
  }
 
  .main-titlesub {
@@ -193,14 +195,14 @@ textarea {
  }
 
  .main-container-flexitems {
-     background-color: rgba(37, 37, 37, 0.5);
+     background-color: rgba(37, 37, 37, 0.4);
      padding: 4rem;
      text-align: center;
 
  }
 
  .main-products {
-     margin-top: 1em;
+     margin-top: 0;
  }
 
  .main-products ul {
@@ -218,13 +220,14 @@ textarea {
      text-decoration: none;
      text-transform: uppercase;
      color: white;
-     font-size: 1.2rem;
-     opacity: 0.5;
+     font-size: 1.1rem;
+     opacity: 0.4;
  }
 
  .main-products-active {
      opacity: 1 !important;
-     border-bottom: 2px solid rgb(255, 174, 0);
+     border: 1px solid rgba(255, 255, 255, 0.5);
+     padding: 0.5em;
  }
 
  .main-products-function {
@@ -243,6 +246,7 @@ textarea {
      border-radius: 1%;
  }
 
+ 
  .main-products-function-propsearch button {
      background-color: rgba(255, 255, 255, 0.1);
      padding: 0.8em;
