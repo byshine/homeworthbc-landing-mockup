@@ -17,7 +17,7 @@ html {
 }
 
 html, body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -194,7 +194,7 @@ textarea {
 
  .main-container-flexitems {
      background-color: rgba(37, 37, 37, 0.5);
-     padding: 2rem;
+     padding: 4rem;
      text-align: center;
 
  }
@@ -211,7 +211,7 @@ textarea {
  .main-products ul li {
      display: inline-block;
      margin-left: 1em;
-     width: 13em;
+     width: 10em;
  }
 
  .main-products ul li a {
@@ -219,9 +219,11 @@ textarea {
      text-transform: uppercase;
      color: white;
      font-size: 1.2rem;
+     opacity: 0.5;
  }
 
  .main-products-active {
+     opacity: 1 !important;
      border-bottom: 2px solid rgb(255, 174, 0);
  }
 
@@ -233,19 +235,21 @@ textarea {
  .main-products-function-propsearch input {
      display: inline-block;
      width: 89%;
-     padding: 1em;
+     padding: 0.8em;
      font-size: 1.2rem;
      margin: 0;
-     border: 1px solid rgba(0,0, 0, 0.3);
+     border: 1px solid rgba(255,255, 255, 0.8);
+     background-color: rgba(255,255,255,0.7);
+     border-radius: 1%;
  }
 
  .main-products-function-propsearch button {
-     background-color:rgb(255, 174, 0);
-     padding: 1em;
+     background-color: rgba(255, 255, 255, 0.1);
+     padding: 0.8em;
      font-size: 1.2rem;
      color: white;
      margin: 0;
-     border: 1px solid rgba(0,0, 0, 0.3);
+     border: 1px solid rgba(255,255, 255, 0.3);
      height: auto;
      border-radius: 0;
  }
@@ -273,8 +277,168 @@ textarea {
      color : white;
  }
 
+ #main-container-active {
+     margin-top: 3em;
+     padding: 2em;   
+ }
+
+ .search-container {
+     display: flex;
+     width: 100%;
+ }
+
+.search-container i {
+    vertical-align: middle;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+ .search-container input {
+     flex: 4 0 0;
+     border: none;
+     vertical-align: middle;
+     padding: 1rem;
+     font-size: 1rem;
+     border-bottom: 1px solid black;
+     outline: none;
+ }
+
+ .search-container input:focus {
+     
+ }
+
+ .search-container ul {
+     flex: 1 0 0;
+     list-style-type: none;
+     display: inline-block;
+     flex-wrap: row;
+ }
+
+ .search-container ul li {
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 1rem;
+     padding: 1rem;
+     margin-bottom: 0;
+     
+ }
+
+ .filter-container ul {
+     list-style-type: none;
+ }
 
 
+.filter-container ul li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+} 
+
+.option-container ul {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.option-container ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.options-right {
+    float: right
+}
+
+.options-right li {
+}
+
+.options-right li button {
+    padding: 0.8em;
+    height: auto;   
+}
+
+.options-right ll button i {
+    line-height: 0;
+    vertical-align: middle;
+}
+
+h5 {
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.image-listing {
+  text-align: center;
+}
+
+.image-listing img {
+    display: block;
+    width: 100%;    
+}
+
+.listing-row {
+    text-align: center;
+}
+
+.image-listing {
+    width: 100%;
+}
+
+.image-listing img {
+    width: 100%;
+    height: 100%;
+}
+
+.listing-card {
+    width: 28%;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.listing-card {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.description-listing {
+    padding: 0.7em;
+}
+
+.description-unit {
+    font-size: 0.9rem;
+    color: rgb(34, 20, 155);
+    font-weight: bold;
+}
+
+.image-listing {
+    position: relative;
+}
+
+.location-listing {
+    font-size: 0.6em;   
+    color: rgba(99, 99, 99, 0.89);
+}
+
+.overlay-listing {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.overlay-description {
+    color: rgba(255,255,255,0.9);  
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 1em;
+    padding: 0.3em;
+}
 
 
 
