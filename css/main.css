@@ -124,10 +124,10 @@ textarea {
     height: 3em;
     color: white;
     padding: 1em;
-    background-color: rgba(255 , 255, 255 ,0.4);
+    background-color: rgba(243, 243, 243, 0.5);
     padding-left: 3em;
     padding-right: 3em;
-    
+    line-height: 0;
 }
 
 .top-nav-logo {
@@ -285,7 +285,8 @@ textarea {
      height: 100%;
      overflow: hidden;
      padding: 2em;
-     padding-top: 3.5em;   
+     padding-top: 3.5em;  
+     padding-bottom: 3em; 
  }
 
  #wrapper {
@@ -466,7 +467,7 @@ h5 {
 }
 
 .cards-container {
-    height: 650px;
+    max-height: 650px;
     overflow: auto;
 }
 
