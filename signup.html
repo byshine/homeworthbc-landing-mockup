@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
 
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
@@ -34,50 +36,38 @@
             <ul class="top-nav-list margin-right">
                 <li><a href="#"><i class="icon ion-search"></i> Valuation</a></li>
                 <li><a href="active-comparables.html"><i class="icon ion-search"></i> Search</a></li>
-                <li><a href="signup.html"><i class="icon ion-person"></i> Members</a></li>
+                <li><a href="#"><i class="icon ion-person"></i> Members</a></li>
             </ul>
         </nav>
 
-        <main id="landing-section" class="shadow">
-            <div class="main-container">
-                <div class="main-container-flexitems">
-                    <div class="main-title">What's your home worth?</div>
-                    <div class="main-titlesub hidden">Take the hassle out of valuing your home with our free online house and condo value algorithm</div>
-                    <div class="main-products">
-                        <ul>
-                            <li><a href="#" class="main-products-active"><i class="icon ion-home"></i> Valuation</a></li>
-                            <li><a href="#"><i class="icon ion-waterdrop"></i> Property Search</a></li>
-                            <li><a href="#"><i class="icon ion-document"></i> Comparable Report</a></li>
-                        </ul>
-
-                        <div class="main-products-function">
-                            <div class="main-products-function-propsearch">
-                                <input type="address" name="address" placeholder="Search for an address.." />
-                                <button class=""><i class="icon ion-search"></i></button>
-                            </div>
-                        </div>
-
-                        <div class="main-titlesub main-titlesub-disclaimer hidden">This tool uses active listings as a basis for comparison. For more <strong><em>accurate valuations</em></strong> <a href="#">Sign Up Today!</a></div> 
+        <main id="signup">
+            <div class="signup-container">
+                <div class="signupform-container">
+                    <h5>Sign Up</h5>
+                    <div class="form-group-signup">
+                    <i class="fas fa-id-card fa-fw"></i>
+                    <input type="text" name="firstname" placeholder="Enter first name" />
                     </div>
-                </div>
-
                 
+                    <div class="form-group-signup">
+                            <i class="fas fa-id-badge fa-fw"></i>
+                    <input type="text" name="lastname" placeholder="Enter last name"/>
+                    </div>
+
+                    <div class="form-group-signup">
+                    <i class="fas fa-at fa-fw"></i>
+                    <input type="text" name="email" placeholder="Enter email address"/>
+                    </div>
+
+                    <div class="form-group-signup">
+                            <i class="fas fa-unlock-alt fa-fw"></i>
+                    <input type="password" name="password" placeholder="Enter password"/>
+                    </div>
+
+                    <button>Sign Up</button>
+                </div>
             </div>
         </main>
-
-        <div class="container u-full-width hidden">
-
-            <section class="info-section">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h5 class="text-center">Property Search</h5>
-                        <p class="text-center"> Take the hassle out of valuing your home with our free online house and condo value algorithm</p>
-                        
-                    </div>
-                </div>
-            </section>
-
-        </div>
 
 
         <script src="js/vendor/modernizr-3.6.0.min.js"></script>

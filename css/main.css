@@ -16,7 +16,7 @@ html {
     line-height: 1.4;
 }
 
-html, body {
+html, body, select, input {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -500,11 +500,150 @@ h5 {
 	background: rgba(230, 230, 230, 0.4); 
 }
 
+#listing-containers {
+    margin-top: 3em;
+}
+
+.comp-landing {
+    background-image: url('../img/bg-3.jpg') !important;
+}
+
+.active-listing {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.active-listing a {
+    color: black;
+}
+
+.listing-contain {
+    margin-top: 3em;
+    padding: 3em;
+}
+
+.form-group button {
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 0;
+    font-weight: normal;
+    border: 1px solid rgba(255, 255,255,0.5);
+}
+
+.form-container input,
+.form-container select {
+    display: inline-block;
+    border: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 0;
+    margin-bottom: 1.5em;
+    width: 95%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1em;
+    font-size: 1rem;
+    line-height: 0;
+    color: rgba(0,0,0,0.7);
+}
 
 
 
+.form-container select option {
+    color: white;
+    padding: 1em;
+}
 
+.form-container input::placeholder {
+    color: rgba(0,0,0, 0.5);
+}
 
+.form-container i {
+    color: rgba(255,255,255,0.8);
+    vertical-align: middle;
+
+}
+
+.form-container label {
+    display: inline-block;
+}
+
+.form-container { 
+    margin-top: 0.5em;
+    text-align: left; 
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 1em; 
+}
+.main-title-listing {
+    font-size: 4rem;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-group:last-child {
+    margin-bottom: 1em;
+}
+
+.disclaimer-container {
+    text-align: center;
+    font-size: 1rem;
+    width: 1200px;
+    margin:  0 auto;
+    background-color: rgba(228, 228, 228, 0.2);
+    padding: 2em;
+}
+
+#signup {
+    height: 100%;
+    overflow-y: hidden;
+    
+}
+
+#signup>.signup-container {
+    width: 100%;
+    margin-top: 3em;
+    height: calc(100% - 3em);
+}
+
+.signupform-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.signupform-container h5 {
+    padding: 0;
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 1em;
+}
+
+.form-group-signup input {
+    margin-bottom: 1em;
+    border: none;
+    border-radius: initial;
+    border-bottom: 1px solid black;
+}
+
+.form-group-signup input::placeholder {
+    font-size: 1rem;
+}
+
+.form-group-signup input:focus {
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.signupform-container button {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.signupform-container i {
+    vertical-align: middle;
+}
 
 
 
