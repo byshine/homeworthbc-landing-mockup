@@ -1,7 +1,7 @@
 function initMap() {
-	var uluru = {lat: 49.246292, lng: -123.116226};
+	var uluru = {lat: 49.284642, lng: -123.115562};
 	var map = new google.maps.Map(document.getElementById('map'), {
-	  zoom: 13,
+	  zoom: 16,
 	  center: uluru,
 	  styles: [
 		{
@@ -167,8 +167,28 @@ function initMap() {
 	});
 	var marker = new google.maps.Marker({
 	  position: uluru,
+	  icon: 'http://homeworthbc.ca/images/Location-pin.png',
 	  map: map
 	});
+	
+	var drawingManager = new google.maps.drawing.DrawingManager({
+		drawingMode: google.maps.drawing.OverlayType.MARKER,
+		drawingControl: true,
+		drawingControlOptions: {
+		  position: google.maps.ControlPosition.TOP_CENTER,
+		  drawingModes: ['marker', 'circle', 'polygon', 'polyline', 'rectangle']
+		},
+		markerOptions: {icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'},
+		circleOptions: {
+		  fillColor: '#ffff00',
+		  fillOpacity: 1,
+		  strokeWeight: 5,
+		  clickable: false,
+		  editable: true,
+		  zIndex: 1
+		}
+	  });
+	  drawingManager.setMap(map);
 
   }
 

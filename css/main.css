@@ -291,7 +291,7 @@ textarea {
      height: 100%;
      overflow: hidden;
      padding: 2em;
-     padding-top: 3.5em;  
+     padding-top: 3em;  
      padding-bottom: 3em; 
  }
 
@@ -305,23 +305,35 @@ textarea {
  }
 
 .search-container i {
+    line-height: 0;
     vertical-align: middle;
-    padding: 1rem;
+    padding: 1em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+    padding-top: 1em;
     font-size: 1rem;
+    line-height: 0;
+    position: relative;
+    top: 0.3em;
 }
 
  .search-container input {
-     flex: 4 0 0;
+     flex: 3 0 0;
      border: none;
      vertical-align: middle;
-     padding: 1rem;
+     padding: 0.5em;
+     margin-left: 0.2em;
+     margin-right: 1.5em;
      font-size: 1rem;
      border-bottom: 1px solid black;
      outline: none;
+     padding-bottom: 0;
+     padding-left: 0;
+     display: inline-block;
  }
 
- .search-container input:focus {
-     
+ .top-nav-logo img {
+     width: 4em;
  }
 
  .search-container ul {
@@ -342,12 +354,13 @@ textarea {
 
  .filter-container ul {
      list-style-type: none;
+     color: #555;
  }
 
 
 .filter-container ul li {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
     padding: 1rem;
 } 
@@ -356,26 +369,40 @@ textarea {
     display: inline-block;
     font-size: 0.9rem;
     padding: 1rem;
+    padding-right: 0.5em;
+    padding-left: 0;
     margin: 0;
     list-style-type: none;
-    margin-top: 1rem;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
 }
 
 .option-container ul li {
     display: inline-block;
-    margin-left: 1em;
+   margin-left: -1em;
+}
+
+.option-container button {
+    border-radius: 0;
+    border: none;
+    font-weight: normal;
+
 }
 
 .options-right {
-    float: right
+    float: right;
+    margin-right: 0.5em !important;
+    
 }
 
-.options-right li {
+.options-right li i {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.5em;
 }
 
 .options-right li button {
     padding: 0.8em;
-    height: auto;   
+    height: auto;
 }
 
 .options-right ll button i {
@@ -412,10 +439,14 @@ h5 {
 }
 
 .listing-card {
-    width: 28%;
+    width: 31%; 
     display: inline-block;
     border: 1px solid rgba(0,0,0,0.3);
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    
+}
+
+.options-right {
+    font-size: 0.9rem !important;
 }
 
 .price-listing {
@@ -423,7 +454,7 @@ h5 {
 }
 
 .cards-container {
-
+    font-size: 1rem;    
 }   
 
 .listing-card {
@@ -437,7 +468,7 @@ h5 {
 
 .description-unit {
     font-size: 0.8rem;
-    color: rgb(34, 20, 155);
+    color: black;
     font-weight: bold;
 }
 
@@ -454,7 +485,7 @@ h5 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(94, 94, 94, 0.8);
 }
 
 .overlay-description {
@@ -473,7 +504,7 @@ h5 {
 }
 
 .cards-container {
-    max-height: 650px;
+    max-height: 720px;
     overflow: auto;
 }
 
@@ -648,6 +679,8 @@ h5 {
 #map {
     height: 100%;
     width: 100%;
+
+    
    }
 
    a[href^="http://maps.google.com/maps"]{display:none !important}
@@ -681,6 +714,25 @@ h5 {
 .text-center {
     text-align: center;
 }
+
+#main-container-active {
+    padding-right : 0; 
+}
+
+.map-container {
+    position: fixed;
+    height: 87.5%;
+    width: 42%; 
+    bottom: 0;
+    right: 0;
+     
+}
+
+.map-column {
+    margin-left: 0;
+}
+
+
 
 /*
  * Hide only visually, but have it available for screen readers:

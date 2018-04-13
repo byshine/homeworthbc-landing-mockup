@@ -32,12 +32,12 @@
 
         <nav id="top-nav" class="top-nav-active-comparables">
             <div class="top-nav-logo">
-                <a href="index.html">homeworth</a>
+                <a href="index.html"><img src="img/logo.png" /></a>
             </div>
             <ul class="top-nav-list margin-right">
                 <li><a href="#"><i class="icon ion-search"></i> Valuation</a></li>
                 <li><a href="active-comparables.html"><i class="icon ion-search"></i> Search</a></li>
-                <li><a href="signup.html"><i class="icon ion-person"></i> Members</a></li>
+                <li><a href="signup.html"><i class="icon ion-person"></i> Members <i class="ion-ios-arrow-down"></i></a></li>
             </ul>
         </nav>
         <div id="wrapper">
@@ -46,7 +46,7 @@
                 <div class="seven columns">
                     <div class="search-container">
                         <i class="icon ion-search"></i>
-                        <input type="address" name="adddress" placeholder="Search Listings" />
+                        <input type="address" name="adddress" placeholder="Enter an MLS number, address, or area of the city" />
                         <ul class="hidden">
                             <li>Save</li>
                             <li>Clear</li>
@@ -56,17 +56,16 @@
                     <div class="option-container">
                             <ul>
                                 <li><button>Last Updated <i class="ion-ios-arrow-down"></i></button></li>
-                                <li><button>Max Price <i class="ion-ios-arrow-down"></i></button></li>
-                                <li><button>Min Price <i class="ion-ios-arrow-down"></i></button></li>
+                               
                             </ul>
                             <ul class="options-right">
-                                    <li><button><i class="ion-ios-settings-strong"></i></button></li>
-                                    <li><button><i class="ion-ios-book"></i></button></li>
+                                    <li><button><i class="fas fa-list-ul fa-fw"></i></button></li>
+                                    <li><button><i class="fas fa-map fa-fw"></i></button></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
 
-                        <h5 style="margin-bottom: 1em;">6 Listings Found</h5>
+                        <h5 style="font-size: 1rem; padding: 0; margin-bottom: 0.5em; margin-left: 1em;">6 Listings Found</h5>
                         <div class="cards-container">
                         <div class="listing-card">
                             <div class="image-listing">
@@ -174,10 +173,10 @@
 
 
 
-                <div class="five columns">
+                <div class="five columns map-column">
                     <div class="filter-container">
                         <ul>
-                            <li>Price  <i class="ion-ios-arrow-down"></i></li>
+                            <li>Price <i class="ion-ios-arrow-down"></i></li>
                             <li>Beds <i class="ion-ios-arrow-down"></i></li>
                             <li>Type <i class="ion-ios-arrow-down"></i></li>
                             <li>Area <i class="ion-ios-arrow-down"></i></li>
@@ -189,6 +188,8 @@
                     </div>
                 </div>
             </div>
+
+           
 </div>
            
 
@@ -203,8 +204,9 @@
         <script src="js/plugins.js"></script>
         <!-- Make sure you put this AFTER Leaflet's CSS -->
         <script src="js/main.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
         <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0qQIv5yPSLnP68obS0zDrr24OOkA-470&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0qQIv5yPSLnP68obS0zDrr24OOkA-470&libraries=drawing&callback=initMap">
         </script>
         
 
